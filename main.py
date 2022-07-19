@@ -28,7 +28,7 @@ class FormatarNome:
 
         :return: retorna os nomes do meio em uppercase
         """
-        nome = self.nome.split(' ')[1:-2]
+        nome = self.nome.split(' ')[1:-1]
         nome = " ".join(nome)
         nome = nome.upper()
         return nome
@@ -43,7 +43,7 @@ class FormatarNome:
         return nome
 
 
-a = FormatarNome('José Antunes da  Silva')
+a = FormatarNome('José Antunes da Silva')
 
 print(f'Primeiro Nome: {a.primeiro_nome()}')
 print(f'Nome do meio: {a.nome_do_meio()}')
