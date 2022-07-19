@@ -28,7 +28,7 @@ class FormatarNome:
 
         :return: retorna os nomes do meio em uppercase
         """
-        nome = self.nome.split(' ')[1:-1]
+        nome = self.nome.split(' ')[1:-2]
         nome = " ".join(nome)
         nome = nome.upper()
         return nome
